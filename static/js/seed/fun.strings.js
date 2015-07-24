@@ -132,7 +132,7 @@ fun.strings = {
     ioFunLandingText: "Powerful organization, account management, record, call, cast and review tasks on inbound and outbound campaigns.",
     howItWorks: "How it works",
     getStarted: "Get started",
-    enterprise: "Enterprise",
+    enterprise: "Contact",
     features: "Features",
     needEnterpriseResources: "Need enterprise resources",
     systemGoingReboot: "The system is going down for reboot NOW!",
