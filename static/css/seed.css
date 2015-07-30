@@ -104,18 +104,10 @@ textarea {
     position: relative;
 }
 
-.navbar-brand {
-    display: block;
-    width: 120px;
-    height: 34px;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 2px;
-    margin-left: 10px;
-    overflow: hidden;
-
-    line-height: 600px;
-    color: #333;
+.navbar-brand > li > a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFF;
     
 }
 
