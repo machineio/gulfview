@@ -80,7 +80,7 @@ textarea {
     margin-bottom: 0;
 
     border: none;
-    border-bottom: 1px solid #666;
+    
 }
 
 .navbar-fixed-top {
@@ -135,7 +135,7 @@ textarea {
 .navbar .nav > li.active > a,
 .navbar .nav > li.active > a:hover {
     background: transparent;
-    color: #81994D;
+    color: #215361
 }
 
 .jumbotron p.text-muted {
