@@ -156,7 +156,7 @@ ul.longarrowlist li:before {
 	background-size:cover;
 	background-position:center center;
 	z-index:1;
-	background-image:url(http://themepush.com/demo/cayman/assets/img/demo/header.jpg);
+	background-image:url(http://themepush.com/demo/cayman/static/img/demo/header.jpg);
 	webkit-animation:10s ease-in;
 	-moz-animation:10s ease-in;
 	-o-animation:10s ease-in;
@@ -1762,7 +1762,7 @@ ul.social-icons li i:hover {
 }
 .owl-item.loading {
 	min-height:150px;
-	background: url(assets/img/loader.gif) no-repeat center center;
+	background: url(static/img/loader.gif) no-repeat center center;
 }
 /*=========================*/
 /* Slider */
