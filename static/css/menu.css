@@ -1210,13 +1210,13 @@ ul#color-skins input[type="radio"] {
     border-color: #20b2aa transparent #ebebeb; }
   /* line 564, ../sass/menu-settings.scss */
   .default-skin .redq .dropdown-menu {
-    border-top-color: #20b2aa; }
+    border-top-color: #d69957; }
   /* line 567, ../sass/menu-settings.scss */
   .default-skin .redq a:hover {
-    color: #20b2aa; }
+    color: #d69957; }
   /* line 571, ../sass/menu-settings.scss */
   .default-skin ul.sub-menu {
-    border-top-color: #20b2aa; }
+    border-top-color: #d69957; }
 
   /* line 576, ../sass/menu-settings.scss */
   .green-sea-skin.header {
