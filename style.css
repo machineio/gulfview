@@ -2599,7 +2599,7 @@ ul.countdown li p {
 
 @media (min-width:768px) {
 	.default-skin.header {
-						background:transparent;
+						background:#fff;
 						border-width:0px;
 	}
 	.navbar-default .navbar-nav>li>a,.navbar-default .navbar-nav>.open>a,.navbar-default .redq-menu-title,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus {
