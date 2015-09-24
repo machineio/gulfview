@@ -161,50 +161,84 @@
 </div>
 
 
-<!-- Carousel 2 (images)
+<!-- GALLERY
 ================================================== -->
-<section class="page-wrapper">
+<section id="start" class="page-wrapper bot0">
+<h2 class="title">SHOWCASE</h2>
+<p class="tagline">
+	 Check out our great gallery. Nulla quis est in massa mattis pellentesque et sed lacus.<br/> Duis porttitor erat maximus pretium vehicula.
+</p>
+</section>
 <div class="container">
 	<div class="row">
-		<div class="carouselany">
-			<div class="item">
-				<article class="col-md-4">
+		<div id="portfolio-items" class="gallery portfolio-items">
+			<div class="col-md-4">
+				<article>
 				<a class="gallery" href="static/img/demo/f1.jpg">
 				<img src="static/img/demo/f1.jpg" alt=""/>
 				</a>
 				</article>
-				<article class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<article>
 				<a class="gallery" href="static/img/demo/f2.jpg">
 				<img src="static/img/demo/f2.jpg" alt=""/>
 				</a>
 				</article>
-				<article class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<article>
 				<a class="gallery" href="static/img/demo/f3.jpg">
 				<img src="static/img/demo/f3.jpg" alt=""/>
 				</a>
 				</article>
 			</div>
-			<div class="item">
-				<article class="col-md-4">
+			<div class="col-md-4">
+				<article>
 				<a class="gallery" href="static/img/demo/f4.jpg">
 				<img src="static/img/demo/f4.jpg" alt=""/>
 				</a>
 				</article>
-				<article class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<article>
 				<a class="gallery" href="static/img/demo/f5.jpg">
 				<img src="static/img/demo/f5.jpg" alt=""/>
 				</a>
 				</article>
-				<article class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<article>
 				<a class="gallery" href="static/img/demo/f6.jpg">
 				<img src="static/img/demo/f6.jpg" alt=""/>
+				</a>
+				</article>
+			</div>
+			<div class="col-md-4">
+				<article>
+				<a class="gallery" href="static/img/demo/f7.jpg">
+				<img src="static/img/demo/f7.jpg" alt=""/>
+				</a>
+				</article>
+			</div>
+			<div class="col-md-4">
+				<article>
+				<a class="gallery" href="static/img/demo/f8.jpg">
+				<img src="static/img/demo/f8.jpg" alt=""/>
+				</a>
+				</article>
+			</div>
+			<div class="col-md-4">
+				<article>
+				<a class="gallery" href="static/img/demo/r1.jpg">
+				<img src="static/img/demo/r1.jpg" alt=""/>
 				</a>
 				</article>
 			</div>
 		</div>
 	</div>
 </div>
-</section>
+<br/>
 
 <!-- About Us
 ================================================== -->
@@ -286,27 +320,7 @@ $(document).ready(function(){
 		closeSpeed:   500
 	});
 });
-$(document).ready(function() {
-  $(".carouselany").owlCarousel({
-      navigation : false, // Show next and prev buttons
-      slideSpeed : 400,
-      pagination : true,
-	  autoHeight:false,
-	  autoPlay:true,
-	  addClassActive : true,
-	  navigationText: false,
-      singleItem:true
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
+$$(document).ready(function(){
 	$('.gallery').featherlightGallery({
 		gallery: {
 			fadeIn: 0,
