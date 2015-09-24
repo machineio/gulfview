@@ -1,0 +1,127 @@
+<div class="container">
+        
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><%= translate("newMessage") %></h3>
+                </div>
+                <div class="panel-body">
+
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-envelope fa-stack-1x"></i>
+                    </span>
+
+                    <form id="profile-form" class="form-profile" novalidate="novalidate">
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="btn-group ">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                                        <i class="fa fa-user fa-fw"></i>
+                                        <span data-label-placement="">username</span> 
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <input type="radio" id="resource_account_1" name="resource_account" value="1" checked="">
+                                            <label for="resource_account_1"></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">/</span>
+                                    <input id="resource_name" type="text" class="form-control" placeholder="Schedule for using Pillows and Beanbags">
+                                </div>
+
+                                <p>
+                                    <%= translate("greatMessageNames") %>.
+                                </p>
+
+                            </div>
+                        </div>                                       
+
+                        <div class="form-group">
+                            <label for="campaign_description"><%= translate("descriptionOptional") %></label>
+                            <input type="text" id="campaign_description" name="campaign_description" class="form-control">
+                        </div>
+
+                        <div class="form-checkbox">
+                            <label>
+                                <input checked="checked" class="js-privacy-toggle" id="repository_public_true" name="repository[public]" tabindex="5" type="radio" value="true">
+                                <%= translate("notification") %>
+                            </label>
+                            <span class="mega-octicon octicon-repo"></span>
+
+                            <span class="note">
+                                Message anyone you can see. Choose who can send messages.
+                            </span>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <label>
+                                <input checked="checked" class="js-privacy-toggle" id="repository_public_false" name="repository[public]" tabindex="5" type="radio" value="false">
+                                <%= translate("alert") %>
+                            </label>
+                            <span class="mega-octicon octicon-lock"></span>
+                            <span class="note">
+                                <%= translate("youChooseWhoUseMessage") %>.
+                            </span>
+                        </div>
+
+                        <button id="create-campaign-btn" class="btn btn-success btn-block" type="submit"><%= translate("createMessage") %></button>
+                    </form>
+                      
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><%= translate("exportMessages") %></h3>
+                </div>
+                <div class="panel-body">
+
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-cloud-download fa-stack-1x"></i>
+                    </span>
+
+                    <form id="export-message-form" class="form-export" novalidate="novalidate">
+  
+
+                        <p class="help-block"><%= translate("getMessageList") %>.</p>
+
+                        <button id="get-export-btn" class="btn btn-success btn-block" type="submit"><%= translate("exportCSV") %></button>
+                    </form>
+                          
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-pills">
+                <li><a href="#all-messages-tab" data-toggle="tab"><%= translate("all") %></a></li>
+                <li><a href="#unread-tab" data-toggle="tab"><%= translate("unread") %></a></li>
+                <li><a href="#notifications-tab" data-toggle="tab"><%= translate("notifications") %></a></li>
+                <li><a href="#alerts-tab" data-toggle="tab"><%= translate("alerts") %></a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id="all-campaigns-tab"></div>
+                <div class="tab-pane" id="active-tab"></div>
+                <div class="tab-pane" id="paused-tab"></div>
+                <div class="tab-pane" id="inbound-tab"></div>
+                <div class="tab-pane" id="outbound-tab"></div>
+            </div>  
+        </div>
+    </div>
+</div>
