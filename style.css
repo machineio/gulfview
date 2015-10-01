@@ -48,7 +48,7 @@ a {
 	margin:0px auto;
 }
 .w360 {
-	max-width:360px;
+	max-width:253px;
 	margin: 0px auto;
 }
 /*=========================*/
@@ -1773,7 +1773,7 @@ ul.social-icons li i:hover {
 	left:0px;
 	width:100%;
 	height:100%;
-	background:rgba(0,0,0,0.20);
+	background:rgba(0,0,0,0.10);
 }
 .carousel,.carousel-inner>.item {
 	position:relative;
@@ -2147,7 +2147,7 @@ ul.social-icons li i:hover {
 	position:absolute;
 	text-align:center;
 	right:5%;
-	top:10.5%;
+	top:15.5%;
 	border-radius:4px;
 	  z-index: 1;
 }
