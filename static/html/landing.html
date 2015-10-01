@@ -1,146 +1,151 @@
-<div class="jumbotron">
-    <div class="container">
 
-        <div class="row">
-            <div id="landing-alert" class="alert alert-danger alert-dismissible hide" role="alert">
-                <button type="button" class="close" data-dismiss="alert">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">
-                        <%= translate("Close") %>
-                    </span>
-                </button>
-                <p></p>
-            </div>        
-        </div>
-
-        <div class="row">
-                
-            <div class="col-md-8">
-                <h1><%= translate("ioFunBanner") %></h1>
-
-                <div class="landing-text">
-                    <h3>
-                        <%= translate("ioFunLandingText") %>
-                    </h3>
-
-                    <p class="landing-actions">
-                        <a href="#login" class="btn btn-large"><%= translate("getStarted") %></a>
-                        <a href="#enterprise" class="btn btn-large"><%= translate("needEnterpriseResources") %>?</a>
-                    </p>
+<section>
+<div class="carousel business_carousel slide bgmove">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <!-- slider item -->
+        <div class="item active">
+            <!-- image -->
+            <div class="slider-bg">
+                <img class="kenburnsreverse" src="static/img/demo/r1.jpg" alt="slider">
+            </div>
+            <div class="slider_overlay">
+            </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <!-- content -->
+                        <div class="carousel-content">
+                            <div class="bounceinup animated1">
+                                <h1>Welcome to your new home!</h1>
+                            </div>
+                            <div class="zoomin animated2">
+                                <h4>Nicoya Gulf, Guanacaste, Costa Rica</h4>
+                            </div>
+                            <div class="bounceindown animated3">
+                                <a class="gallery btn btn-ghost" href="static/img/demo/re1.jpg">Start Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content end -->
                 </div>
-                          
-            </div>
-
-            <div class="col-md-4">  
-                <form id="langing-signup-form" class="form-signup" novalidate="novalidate">
-    
-                    <div class="form-group">
-                        <input type="text" id="landing_username" name="landing_username" class="form-control" placeholder="<%= translate("yourUsername") %>" autofocus="">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="text" id="landing_email" name="landing_email" class="form-control" placeholder="<%= translate("yourEmail") %>">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="landing_password" name="landing_password" placeholder="<%= translate("createApassword") %>"/>
-                        <p class="text-muted"><%= translate("passwordStuffs") %><p>
-                    </div>
-                    
-                    <button id="landing-signup-btn" class="btn btn-lg btn-primary btn-block" type="submit"><%= translate("signUp") %></button>
-                    <!--
-                    <p class="text-muted"><%= translate("clickYouAgree") %> <a href="#terms"><%= translate("termsOfService") %></a> <%= translate("and") %> <a href="#privacy"><%= translate("privacyPolicy") %></a>. <%= translate("willSendRelatedEmails") %>.</p> -->
-                </form>
             </div>
         </div>
-
     </div>
 </div>
-      
-
-<div class="container marketing">
-
-    <div class="row">
-
-        <div class="col-md-12 marketing-header">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-heartbeat  fa-stack-1x"></i>
-            </span>
-<!--
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-spinner fa-stack-1x"></i>
-            </span>
--->
-            <h2><%= translate("youLoveIt") %></h2>         
-            <h3><%= translate("powerComCamColIntAndS") %>.</h3>
-
-            <!--<p><%= translate("oldMan") %></p> <b><%= translate("oldManAristotle") %></b>-->
-            
+</section>
+<!-- Form
+================================================== -->
+<div class="row w360 realestateform wow flipInY">
+    <h4>CONTACT US</h4>
+    <div class="done">
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            Your message has been sent. Thank you!
         </div>
     </div>
+    <form method="post" action="contact.php" id="contactform">
+        <input name="name" type="text" class="col-md-12" placeholder="Your Name *">
+        <input name="email" type="email" class="col-md-12" placeholder="E-mail address *">
+        <input name="email" type="email" class="col-md-12" placeholder="Phone number *">
+        <textarea name="comment" class="col-md-12" placeholder="Message / Best time to reach you  *"></textarea>
+        <input type="submit" id="submit" class="contact submit btn btn-primary" value="Send message">
+    </form>
+</div>
 
+
+<!-- GALLERY
+================================================== -->
+<section id="start" class="page-wrapper bot0">
+<h2 class="title">JOIN THE LIFESTYLE</h2>
+<p class="tagline">
+     With jungles, golden beaches and dry forests, a perpetually mild climate and an easy going lifestyle...<br/> it’s no surprise that Costa Rica boast 5 percent of the world’s exciting biodiversity and consider one of the happiest countries in the world...<br/>Gulf View Estates invites you to part of it.
+</p>
+</section>
+<div class="container">
     <div class="row">
-
-        <div class="col-md-6">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-bullhorn fa-stack-1x"></i>
-            </span>
-
-            <h3><%= translate("bcastMsgsThsndsCnts") %>.</h3>
-            <p><%= translate("sndVoiceMsgsCnts") %>.</p>
+        <div id="portfolio-items" class="gallery portfolio-items">
+            <div class="col-md-4">
+                <article>
+                <a class="gallery" href="static/img/demo/f1.jpg">
+                <img src="static/img/demo/f1.jpg" alt=""/>
+                </a>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article>
+                <a class="gallery" href="static/img/demo/f2.jpg">
+                <img src="static/img/demo/f2.jpg" alt=""/>
+                </a>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article>
+                <a class="gallery" href="static/img/demo/f3.jpg">
+                <img src="static/img/demo/f3.jpg" alt=""/>
+                </a>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article>
+                <a class="gallery" href="static/img/demo/f4.jpg">
+                <img src="static/img/demo/f4.jpg" alt=""/>
+                </a>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article>
+                <a class="gallery" href="static/img/demo/f5.jpg">
+                <img src="static/img/demo/f5.jpg" alt=""/>
+                </a>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article>
+                <a class="gallery" href="static/img/demo/f6.jpg">
+                <img src="static/img/demo/f6.jpg" alt=""/>
+                </a>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article>
+                <a class="gallery" href="static/img/demo/f7.jpg">
+                <img src="static/img/demo/f7.jpg" alt=""/>
+                </a>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article>
+                <a class="gallery" href="static/img/demo/f8.jpg">
+                <img src="static/img/demo/f8.jpg" alt=""/>
+                </a>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article>
+                <a class="gallery" href="static/img/demo/f9.jpg">
+                <img src="static/img/demo/f9.jpg" alt=""/>
+                </a>
+                </article>
+            </div>
         </div>
-
-        <div class="col-md-6">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-cubes fa-stack-1x"></i>
-            </span>
-
-            <h3><%= translate("orgToolMonkeys") %>.</h3>
-            <p><%= translate("orgToolMonkeyDescription") %>.</p>
-        </div>
-
     </div>
+</div>
+<br/>
 
-    <div class="row">
-
-        <div class="col-md-6">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-pie-chart fa-stack-1x"></i>
-            </span>
-
-            <h3><%= translate("greatComStartWcoll") %>.</h3>
-            <p><%= translate("planFutureDiscussionTools") %>.</p>
-        </div>
-
-        <div class="col-md-6">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <!-- <i class="fa fa-cloud fa-stack-1x"></i> -->
-                <i class="fa fa-phone fa-stack-1x"></i>
-            </span>
-
-            <h3><%= translate("manageInbondAndOutbound") %>.</h3>
-            <p><%= translate("matchCallersandTeams") %>.</p>
-        </div>
+<!-- About Us
+================================================== -->
+<section class="split">
+<div class="col-md-6" style="height:420px;background-size:cover;background-image:url(static/img/demo/m.png);">
+    <div class="overlay accentbgcolor" style="opacity:0.4;">
     </div>
-
-    <!-- enterprise -->
-    <div class="row">
-        <div class="col-md-12 marketing-header">
-
-            <h2><%= translate("bringFunDataCenter") %>.</h2>
-
-            <h3><%= translate("useFunEnterprise") %>.</h3>
-
-            <p class="landing-actions">
-                <a href="#enterprise" class="btn btn-large"><%= translate("learnAboutEnterprise") %></a>
-            </p> 
-            
-        </div>
+</div>
+<div class="col-md-6 darkbgcolor text-center" style="height:420px;padding-top:8%;background-size:cover;background-image:url(static/img/demo/fa3.jpg);">
+    <div class="overlay darkbgcolor" style="opacity:0.9;">
     </div>
-</div> <!-- /container -->  
+    <div class="thetext">
+        <i class="fa fa-tint fa-3x"></i>
+        <h2 class="title" style="line-height:1.8;"> <b>Nicoya Gulf</b><br/>
+        <span style="border-top:1px solid;border-bottom:1px solid;padding:5px 0;margin:5px 0;display:inline-block;">Guanacaste, Costa Rica</span><br/>
+        (506) xxxx-xxxx</h2>
+    </div>
+</div>
+</section>
