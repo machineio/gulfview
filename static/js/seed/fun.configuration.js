@@ -289,5 +289,6 @@ fun.conf.hash = {
     companies: '#companies',
     sounds: '#sounds',
     recordings: '#recordings',
-    settings: '#settings'
+    settings: '#settings',
+    development: '#development'
 };

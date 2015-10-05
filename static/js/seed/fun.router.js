@@ -120,6 +120,16 @@ fun.Router = Backbone.Router.extend({
         fun.instances.footer.render();
     },
 
+    development: function(){
+        'use strict';
+        var development = translate('development');
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        //fun.instances.subheader.render(development);
+        fun.instances.development.render();
+        fun.instances.footer.render();
+    },
+
     gallery: function(){
         'use strict';
         var gallery = translate('gallery');
