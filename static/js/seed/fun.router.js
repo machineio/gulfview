@@ -14,6 +14,7 @@ fun.Router = Backbone.Router.extend({
         "development": "development",
         "homes": "homes",
         "amenities": "amenities",
+        "community": "community",
         "gallery": "gallery",
         "privacy": "privacy",
         "contact": "contact",
@@ -50,6 +51,11 @@ fun.Router = Backbone.Router.extend({
         // amenities
         fun.instances.amenities = new fun.views.amenities({
             el:"#fun-amenities"
+        });
+
+        // community
+        fun.instances.community = new fun.views.community({
+            el:"#fun-community"
         });
 
         // gallery
@@ -117,6 +123,16 @@ fun.Router = Backbone.Router.extend({
         fun.instances.navbar.render();
         //fun.instances.subheader.render(amenities);
         fun.instances.amenities.render();
+        fun.instances.footer.render();
+    },
+
+    community: function(){
+        'use strict';
+        var community = translate('community');
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        //fun.instances.subheader.render(community);
+        fun.instances.community.render();
         fun.instances.footer.render();
     },
 

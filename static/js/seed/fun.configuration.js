@@ -262,6 +262,7 @@ fun.conf.hash = {
 
     profile: '#profile',
     profileWithAccount: '#profile/a{account}',
+    community: '#community',
 
     activity: '#activity',
     orgs: '#orgs',
