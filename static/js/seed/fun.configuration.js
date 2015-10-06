@@ -228,6 +228,7 @@ fun.conf.templates = {
     homes: fun.utils.format('%s/homes.html', fun.conf.html),
     amenities: fun.utils.format('%s/amenities.html', fun.conf.html),
     gallery: fun.utils.format('%s/gallery.html', fun.conf.html),
+    community: fun.utils.format('%s/community.html', fun.conf.html),
     contact: fun.utils.format('%s/contact.html', fun.conf.html),
 
     footer: fun.utils.format('%s/footer.html', fun.conf.html)
