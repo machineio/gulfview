@@ -12,12 +12,6 @@ fun.conf = {
     domain: 'iofun.io',
     // seed url root
     urlRoot: '/api/',
-    // software
-    sw:'',
-    // hardware
-    hw:'',
-    // sip protocol
-    sip:'',
 
     // system uuid's
     uuidRecord: 'record_uuid',
